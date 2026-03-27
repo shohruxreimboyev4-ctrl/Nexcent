@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+.hero-swiper .swiper-pagination-bullet {
+  background: #16a34a;
+  opacity: 0.4;
+}
+
+.hero-swiper .swiper-pagination-bullet-active {
+  background: #16a34a;
+  opacity: 1;
+}

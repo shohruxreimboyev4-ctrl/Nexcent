@@ -1,21 +1,21 @@
 import React from "react";
 import MainLayout from "../layout/MainLayout";
-import { Route, Routes } from "react-router-dom";
-import HomePage from "../pages/HomePage";
-import FeaturesPage from "../pages/FeaturesPage";
-import CommunityPage from "../pages/CommunityPage";
-import BlogPage from "../pages/BlogPage";
-import PricingPage from "../pages/PricingPage";
+import Home from "../pages/Home";
+import Features from "../pages/Features";
+import { Routes, Route } from "react-router-dom";
+import Community from "../pages/Community";
+import Blog from "../pages/Blog";
+import Pricing from "../pages/Pricing";
 
 const AppRouter = () => {
   return (
     <Routes>
       <Route element={<MainLayout />}>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/features" element={<FeaturesPage />} />
-        <Route path="/community" element={<CommunityPage />} />
-        <Route path="/blog" element={<BlogPage />} />
-        <Route path="/pricing" element={<PricingPage />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/features" element={<Features />} />
+        <Route path="/community" element={<Community />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/pricing" element={<Pricing />} />
       </Route>
     </Routes>
   );
